@@ -1,0 +1,78 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+html {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.col {
+   width: calc(100% / 3 - (2em / 3)); 
+   float: left;
+   margin-right: 1em;
+}
+
+.col:nth-child(3n) {
+    margin-right: 0px;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+h2 {
+    color: #e53170;
+    margin: 1em 0;
+}
+
+p {
+    margin-bottom: 1em;
+}
+
+/* UTILITIES */
+.text-center {
+    text-align: center;
+}
+
+/* MAIN*/
+/* Team section */
+
+/* Card */
+.card {
+    color: white;
+    background-color: black;
+    margin-bottom: 1.5em;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.card .avatar {
+    width: 100px;
+    float: left;
+}
+
+.card .content {
+    width: calc(100% - 100px);
+    float: left;
+    padding: .5em .5em 0px;
+}
+
+.content > * {
+    margin-bottom: .5em;
+}
+
+.card a.email {
+    text-decoration: none;
+    color: #6ecbf2;
+}
